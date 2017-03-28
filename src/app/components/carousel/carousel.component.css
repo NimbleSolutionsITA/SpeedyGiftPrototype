@@ -1,0 +1,155 @@
+.container {
+  text-align: center;
+}
+.wrap {
+  padding:0 75px;
+}
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+.slide {
+  background: white;
+  padding: 0 0 20px 0;
+}
+.slides {
+  list-style: none;
+  position: relative;
+  width: 200%; /* Number of panes * 100% */
+  padding-left: 0;
+  overflow: hidden; /* Clear floats */
+  /* Slide effect Animations*/
+  -moz-animation: carousel 30s infinite;
+  -webkit-animation: carousel 30s infinite;
+  animation: carousel 30s infinite;
+}
+li {
+ background-color: transparent;
+  -webkit-transition: all 1s; /* Safari */
+  transition: all 1s;
+}
+li.active {
+  background-color: #e6e6e6;
+  -webkit-transition: all 1s; /* Safari */
+  transition: all 1s;
+}
+li.active .slide {
+  box-shadow: 0px 0px 20px 10px rgba(8, 8, 8, 0.1);
+}
+ul:hover li {
+  background-color: transparent;
+}
+ul:hover .slide {
+  box-shadow: none;
+}
+li:hover {
+   background-color: #e6e6e6 !important;
+   -webkit-transition: all 1s; /* Safari */
+   transition: all 1s;
+ }
+li:hover .slide {
+  box-shadow: 0px 0px 20px 10px rgba(8, 8, 8, 0.1) !important;
+}
+.slides > li{
+  position:relative;
+  float:left;
+  width: 16.6666%; /* 100 / number of panes */
+  padding: 30px 30px 50px;
+}
+.carousel img{
+  display:block;
+  width:100%;
+  max-width:100%;
+}
+.carousel h2{
+  margin-bottom: 0;
+  font-size:1em;
+  padding:1.5em 0.5em 1.5em 0.5em;
+  position:absolute;
+  right:0px;
+  bottom:0px;
+  left:0px;
+  text-align:center;
+  color:#fff;
+  background-color:rgba(0,0,0,0.75);
+  text-transform: uppercase;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000\9;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+}
+.carousel-indicators li.active {
+  border: 1px solid #403c4a;
+  background-color: #403c4a;
+}
+button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top:20%;
+  color: #403c4a;
+}
+button.left {
+  left: 7px;
+}
+button.right {
+  right: 17px;
+}
+button i:before {
+  font-size: 2em;
+  margin-left: 0;
+}
+button:focus {
+  outline: none;
+}
+button:hover {
+  color: #c74a6c;
+  -webkit-transition: all .2s; /* Safari */
+  transition: all .5s;
+}
+
+.container h2 {
+  text-transform: uppercase;
+  font-weight:bold;
+ }
+.container > p {
+  padding:0 20%;
+  font-size: 1.25em;
+}
+.container span{
+  font-weight:bold;
+  font-size: 1.1em;
+}
+.container span p {
+  margin-bottom: 0;
+}
+.container span p{
+  color: #403c4a;
+  margin-top: 25px;
+}
+.container span.brand p {
+  color:#bcbcbc;
+  text-transform: uppercase;
+}
+.container span.price p{
+  color: #ab9f1d;
+}

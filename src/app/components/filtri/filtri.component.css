@@ -1,0 +1,122 @@
+.filtri {
+  background-color: #403c4a;
+  color: white;
+  padding: 30px 0;
+}
+.filtri .col-sm-9 {
+  padding: 27px 0;
+}
+.filtri .filter {
+  position: relative;
+  float: left;
+  width: 20%;
+}
+.filtri .box {
+  width: 100%;
+}
+.filtri .box button {
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: transparent;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid white;
+}
+.filtri .box button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.filtri .box button span:before {
+  font-size: 16px;
+}
+.filtri .options {
+  padding: 15px 10px;
+  background-color: white;
+  color: #403c4a;
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  margin-left: -15px;
+  margin-right: -15px;
+  width: 210px;
+}
+.filtri .options ul {
+  padding-left: 0;
+
+}
+.filtri .options ul li {
+  list-style: none;
+  border-bottom: 1px solid #eee;
+  padding: 10px 50px 5px 0;
+  cursor: pointer;
+}
+.filtri .options ul li:hover {
+  background-color: #efefef;
+}
+.filtri .options ul li a {
+  color: #827a96;
+  text-transform: uppercase;
+}
+.filtri span {
+  float: right;
+  cursor: pointer;
+}
+.filtri span:before {
+  float: right;
+  font-size: 12px;
+}
+.filtri .colorpick {
+  cursor: pointer;
+  float: left;
+  margin: 5px;
+}
+.filtri .colorpick:nth-child(2), .filtri .colorpick:nth-child(6) {
+  margin-left: 0;
+}
+.filtri .colorpick:nth-child(5), .filtri .colorpick:nth-child(9) {
+  margin-right: 0;
+}
+.filtri .colorpick .green {
+  background-image: url("../../../assets/images/color/green.jpg");
+  background-size: cover;
+  margin-left: 0;
+  width: 40px;
+  height: 40px;
+}
+.filtri .colorpick .blue {
+  background-image: url("../../../assets/images/color/blue.jpg");
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+.filtri .colorpick .red {
+  background-image: url("../../../assets/images/color/red.jpg");
+  width: 40px;
+  height: 40px;
+}
+.filtri .colorpick .grey {
+  background-image: url("../../../assets/images/color/grey.jpg");
+  width: 40px;
+  height: 40px;
+}
+.filtri .colorpick .yellow {
+  background-image: url("../../../assets/images/color/yellow.jpg");
+  width: 40px;
+  height: 40px;
+}
+.filtri .colorpick .purple {
+  background-image: url("../../../assets/images/color/purple.jpg");
+  width: 40px;
+  height: 40px;
+}
+.filtri .colorpick .beige {
+  background-image: url("../../../assets/images/color/beige.jpg");
+  width: 40px;
+  height: 40px;
+}
+.filtri .colorpick .orange {
+  background-image: url("../../../assets/images/color/orange.jpg");
+  width: 40px;
+  height: 40px;
+}

@@ -1,0 +1,101 @@
+    /*
+    Flaticon icon font: Flaticon
+    Creation date: 28/03/2017 01:56
+    */
+
+    @font-face {
+  font-family: "Flaticon";
+  src: url("./Flaticon.eot");
+  src: url("./Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("./Flaticon.woff") format("woff"),
+       url("./Flaticon.ttf") format("truetype"),
+       url("./Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("./Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+    .fi:before{
+        display: inline-block;
+  font-family: "Flaticon";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+    }
+
+    .flaticon-technology-1:before { content: "\f100"; }
+.flaticon-cosmetics:before { content: "\f101"; }
+.flaticon-home:before { content: "\f102"; }
+.flaticon-diamond:before { content: "\f103"; }
+.flaticon-fashion-2:before { content: "\f104"; }
+.flaticon-hand-bag:before { content: "\f105"; }
+.flaticon-fashion-1:before { content: "\f106"; }
+.flaticon-woman:before { content: "\f107"; }
+.flaticon-fashion:before { content: "\f108"; }
+.flaticon-smile:before { content: "\f109"; }
+.flaticon-transport:before { content: "\f10a"; }
+.flaticon-church:before { content: "\f10b"; }
+.flaticon-stripes:before { content: "\f10c"; }
+.flaticon-technology:before { content: "\f10d"; }
+.flaticon-party:before { content: "\f10e"; }
+.flaticon-diploma:before { content: "\f10f"; }
+.flaticon-handshake:before { content: "\f110"; }
+.flaticon-school:before { content: "\f111"; }
+.flaticon-marriage-rings-couple-with-a-heart:before { content: "\f112"; }
+.flaticon-signs:before { content: "\f113"; }
+.flaticon-plus-symbol:before { content: "\f114"; }
+.flaticon-check:before { content: "\f115"; }
+.flaticon-cancel:before { content: "\f116"; }
+.flaticon-arrows-1:before { content: "\f117"; }
+.flaticon-arrows:before { content: "\f118"; }
+.flaticon-profile:before { content: "\f119"; }
+.flaticon-magnifying-glass:before { content: "\f11a"; }
+.flaticon-shapes:before { content: "\f11b"; }
+.flaticon-christmas:before { content: "\f11c"; }
+.flaticon-tool:before { content: "\f11d"; }
+.flaticon-shopping-bag:before { content: "\f11e"; }
+    
+    $font-Flaticon-technology-1: "\f100";
+    $font-Flaticon-cosmetics: "\f101";
+    $font-Flaticon-home: "\f102";
+    $font-Flaticon-diamond: "\f103";
+    $font-Flaticon-fashion-2: "\f104";
+    $font-Flaticon-hand-bag: "\f105";
+    $font-Flaticon-fashion-1: "\f106";
+    $font-Flaticon-woman: "\f107";
+    $font-Flaticon-fashion: "\f108";
+    $font-Flaticon-smile: "\f109";
+    $font-Flaticon-transport: "\f10a";
+    $font-Flaticon-church: "\f10b";
+    $font-Flaticon-stripes: "\f10c";
+    $font-Flaticon-technology: "\f10d";
+    $font-Flaticon-party: "\f10e";
+    $font-Flaticon-diploma: "\f10f";
+    $font-Flaticon-handshake: "\f110";
+    $font-Flaticon-school: "\f111";
+    $font-Flaticon-marriage-rings-couple-with-a-heart: "\f112";
+    $font-Flaticon-signs: "\f113";
+    $font-Flaticon-plus-symbol: "\f114";
+    $font-Flaticon-check: "\f115";
+    $font-Flaticon-cancel: "\f116";
+    $font-Flaticon-arrows-1: "\f117";
+    $font-Flaticon-arrows: "\f118";
+    $font-Flaticon-profile: "\f119";
+    $font-Flaticon-magnifying-glass: "\f11a";
+    $font-Flaticon-shapes: "\f11b";
+    $font-Flaticon-christmas: "\f11c";
+    $font-Flaticon-tool: "\f11d";
+    $font-Flaticon-shopping-bag: "\f11e";

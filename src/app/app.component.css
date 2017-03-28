@@ -1,0 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
+
+* {
+  font-family: "Titillium Web";
+}
+
+a {
+  color: #403c4a;
+}

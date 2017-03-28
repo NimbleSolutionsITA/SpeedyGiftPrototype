@@ -1,0 +1,188 @@
+a {
+  color: #403c4a;
+}
+ul.nav.navbar-nav, .navbar-header {
+  padding: 4px 0;
+}
+.navbar {
+  margin-bottom: 0;
+}
+.navbar-default {
+  background-color: white;
+  border: none;
+  font-family: "Titillium Web";
+}
+
+.navbar-brand {
+  padding: 10px 15px;
+  margin-right: 20px;
+}
+
+.navbar-brand img {
+  max-height:30px;
+
+}
+
+.navbar-nav a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #403c4a;
+  font-size: 15px;
+}
+
+.navbar-nav a:hover, a:focus, a:hover {
+  color: #c74a6c;
+  text-decoration: none;
+  -webkit-transition: all .2s; /* Safari */
+  transition: all .5s;
+}
+
+.navbar-nav.navbar-right a {
+  color: #c74a6c;
+}
+.social-login, .form {
+  padding-top: 20px;
+}
+.nav-icons {
+  padding:18px 15px 18px 0;
+}
+
+.nav-icons i {
+  margin-left: 5px;
+}
+.login {
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 1px 4px 9px -6px;
+}
+.login .container {
+  padding-bottom: 20px;
+}
+.login h4, .login h5 {
+  color: #c74a6c;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.social-login {
+  background-color: #403c4a;
+  color: white;
+  padding-bottom: 60px;
+}
+.social-login a {
+  color: white;
+}
+.login .social-login h4, .login .social-login h5 {
+  color: white;
+}
+.social-login p {
+  font-size: .9em;
+  font-weight:normal;
+}
+.social-login .social a i.fa {
+  height: 40px;
+  width: 40px;
+  padding:15px 10px;
+  text-align: center;
+  margin-right: 10px;
+  color: white;
+}
+.social-login .social a i.fa:hover {
+  background-color: #c74a6c;
+  -webkit-transition: all .2s; /* Safari */
+  transition: all .5s;
+}
+.social-login .social a i.fa-facebook-f {
+  background-color: #3c589e;
+}
+.social-login .social a i.fa-twitter {
+  background-color: #00aced;
+}
+.social-login .social a i.fa-google-plus {
+  background-color: #dc4a38;
+}
+.password {
+  margin-bottom: 40px;
+}
+.btn {
+  background-color: #c74a6c;
+  color: white;
+  border: none;
+  border-radius: 0;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 10px;
+}
+.btn:focus {
+  outline: none;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+  font-size: 16px !important;
+  margin-left: 15px !important;
+}
+input[type=checkbox]:not(old){
+  width   : 28px;
+  margin  : 0;
+  padding : 0;
+  opacity : 0;
+}
+input[type=checkbox   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+input[type=checkbox   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 15px;
+  height           : 15px;
+  margin           : 0.25em 0.5em 0.25em 0;
+  border           : 1px solid #403c4a;
+  vertical-align   : bottom;
+}
+input[type=checkbox]:not(old):checked + label > span > span{
+  display          : block;
+  width: 7px;
+  height: 7px;
+  margin: 3px;
+  background       : #c74a6c;
+}
+.subform {
+  color: #403c4a;
+  text-align: center;
+  font-size: .9em;
+  margin-top: 20px;
+}
+.form-control {
+  border: none;
+  box-shadow: none;
+  border-bottom: 1px solid #403c4a;
+  border-radius: 0;
+  margin: 20px 0;
+}
+a.sub-password {
+  text-decoration: underline;
+  color: #c74a6c;
+  font-size: .75em;
+  margin-top: -10px;
+  padding-top: 0;
+}
+.contact i.fa {
+  color: #9e7c97;
+  margin-right: 10px;
+}
+@media (min-width: 768px) {
+  .navbar {
+    border-radius: 0;
+  }
+  .social-login:before {
+    left: 0;
+    background: #403c4a;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 999em;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}

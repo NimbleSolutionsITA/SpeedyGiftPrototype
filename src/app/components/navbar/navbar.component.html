@@ -1,0 +1,94 @@
+<!-- NAVBAR -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" (click)="isCollapsed = !isCollapsed">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="{{logo}}">
+      </a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div id="navbar" class="navbar-collapse collapse card card-block card-header"
+         (collapsed)="collapsed($event)"
+         (expanded)="expanded($event)"
+         [collapse]="isCollapsed">
+      <ul class="nav navbar-nav">
+        <li><a href="/vetrina">Vetrina</a></li>
+        <li><a href="#">Regalo</a></li>
+        <li><a href="#">Novità</a></li>
+        <li><a href="#">Chi Siamo</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <li><a (click)="accedi = !accedi">Accedi</a></li>
+      </ul>
+
+      <div class="nav-icons navbar-right">
+        <a href="#"><i class="flaticon-shapes" aria-hidden="true"></i></a>
+        <a href="#"><i class="flaticon-shopping-bag" aria-hidden="true"></i></a>
+        <a href="#"><i class="flaticon-magnifying-glass" aria-hidden="true"></i></a>
+      </div>
+
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav>
+<div *ngIf="accedi" [@flyInOut] class="login">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-9 form">
+        <div class="row">
+          <div class="col-xs-12 col-sm-6">
+            <h4>Sei già nostro cliente?</h4>
+            <input class="form-control" type="text" value="Email">
+            <div class="password">
+              <show-hide-container>
+                <input class="form-control forgot" type="password" #showhideinput [ngModel]="password" style="margin-bottom: 0;"/>
+              </show-hide-container>
+              <a href="#" class="sub-password">Hai dimenticato la password?</a>
+            </div>
+            <input id="option" type="checkbox" name="field" value="option" checked>
+            <label for="option" style="margin-bottom: 13px;"><span><span></span></span>Ricordami su questo dispositivo</label>
+            <br>
+            <button class="btn btn-default">Accedi</button>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+            <h4>Sei un nuovo cliente?</h4>
+            <input class="form-control" type="text" value="Nome" id="example-text-input">
+            <input class="form-control" type="text" value="Email" id="example-text-input">
+            <div class="password">
+              <show-hide-container>
+                <input class="form-control" type="password" #showhideinput [ngModel]="password" style="margin-bottom: 0;" />
+              </show-hide-container>
+            </div>
+            <button class="btn btn-default">Registrati</button>
+            <p class="subform">Cliccadno su "Registrati" accett i <a href="#">Termini e Condizioni</a> di servizi forniti da SpeedyGift</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-3 social-login">
+        <h4>Oppure accedi con</h4>
+        <p>Non pubblicheremo mai nessun contenuto senza il tuo permesso</p>
+        <div class="social">
+          <a href="#"><i class="fa fa-facebook-f"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-google-plus"></i></a>
+        </div>
+        <br><br><br>
+        <h5>Ti serve supporto?</h5>
+        <p>Siamo qui per aiutarti.</p>
+        <div class="contact">
+          <p><i class="fa fa-phone"></i> +39 06 50 43 123 </p>
+          <a href="mailto:info@speedygify.it"><i class="fa fa-envelope"></i> info@speedygify.it</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

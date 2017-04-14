@@ -104,4 +104,7 @@ export class FiltriComponent {
   public size:boolean = false;
   public price:boolean = false;
   public order:boolean = false;
+  public filter = 0;
+  
+
 }

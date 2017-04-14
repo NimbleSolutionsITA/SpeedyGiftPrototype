@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 28/03/2017 01:56
+  	Creation date: 02/04/2017 11:20
   	*/
 
 @font-face {
@@ -29,34 +29,35 @@ font-style: normal;
 margin-left: 20px;
 }
 
-.flaticon-technology-1:before { content: "\f100"; }
-.flaticon-cosmetics:before { content: "\f101"; }
-.flaticon-home:before { content: "\f102"; }
-.flaticon-diamond:before { content: "\f103"; }
-.flaticon-fashion-2:before { content: "\f104"; }
-.flaticon-hand-bag:before { content: "\f105"; }
-.flaticon-fashion-1:before { content: "\f106"; }
-.flaticon-woman:before { content: "\f107"; }
-.flaticon-fashion:before { content: "\f108"; }
-.flaticon-smile:before { content: "\f109"; }
-.flaticon-transport:before { content: "\f10a"; }
-.flaticon-church:before { content: "\f10b"; }
-.flaticon-stripes:before { content: "\f10c"; }
-.flaticon-technology:before { content: "\f10d"; }
-.flaticon-party:before { content: "\f10e"; }
-.flaticon-diploma:before { content: "\f10f"; }
-.flaticon-handshake:before { content: "\f110"; }
-.flaticon-school:before { content: "\f111"; }
-.flaticon-marriage-rings-couple-with-a-heart:before { content: "\f112"; }
-.flaticon-signs:before { content: "\f113"; }
-.flaticon-plus-symbol:before { content: "\f114"; }
-.flaticon-check:before { content: "\f115"; }
-.flaticon-cancel:before { content: "\f116"; }
-.flaticon-arrows-1:before { content: "\f117"; }
-.flaticon-arrows:before { content: "\f118"; }
-.flaticon-profile:before { content: "\f119"; }
-.flaticon-magnifying-glass:before { content: "\f11a"; }
-.flaticon-shapes:before { content: "\f11b"; }
-.flaticon-christmas:before { content: "\f11c"; }
-.flaticon-tool:before { content: "\f11d"; }
-.flaticon-shopping-bag:before { content: "\f11e"; }
+.flaticon-time:before { content: "\f100"; }
+.flaticon-technology-1:before { content: "\f101"; }
+.flaticon-cosmetics:before { content: "\f102"; }
+.flaticon-home:before { content: "\f103"; }
+.flaticon-diamond:before { content: "\f104"; }
+.flaticon-fashion-2:before { content: "\f105"; }
+.flaticon-hand-bag:before { content: "\f106"; }
+.flaticon-fashion-1:before { content: "\f107"; }
+.flaticon-woman:before { content: "\f108"; }
+.flaticon-fashion:before { content: "\f109"; }
+.flaticon-smile:before { content: "\f10a"; }
+.flaticon-transport:before { content: "\f10b"; }
+.flaticon-church:before { content: "\f10c"; }
+.flaticon-stripes:before { content: "\f10d"; }
+.flaticon-technology:before { content: "\f10e"; }
+.flaticon-party:before { content: "\f10f"; }
+.flaticon-diploma:before { content: "\f110"; }
+.flaticon-handshake:before { content: "\f111"; }
+.flaticon-school:before { content: "\f112"; }
+.flaticon-marriage-rings-couple-with-a-heart:before { content: "\f113"; }
+.flaticon-signs:before { content: "\f114"; }
+.flaticon-plus-symbol:before { content: "\f115"; }
+.flaticon-check:before { content: "\f116"; }
+.flaticon-cancel:before { content: "\f117"; }
+.flaticon-arrows-1:before { content: "\f118"; }
+.flaticon-arrows:before { content: "\f119"; }
+.flaticon-profile:before { content: "\f11a"; }
+.flaticon-magnifying-glass:before { content: "\f11b"; }
+.flaticon-shapes:before { content: "\f11c"; }
+.flaticon-christmas:before { content: "\f11d"; }
+.flaticon-tool:before { content: "\f11e"; }
+.flaticon-shopping-bag:before { content: "\f11f"; }

@@ -1,0 +1,205 @@
+a:hover, a:focus, a:hover,
+a span.flaticon-arrows-1:hover, a span.flaticon-arrows-1:focus, a span.flaticon-arrows-1:hover {
+  text-decoration: none;
+  color: #a39a01;
+  -webkit-transition: all .2s; /* Safari */
+  transition: all .5s;
+}
+a span.flaticon-arrows-1 {
+  color: white;
+}
+a span.flaticon-arrows-1:before {
+  margin-left: 0;
+}
+.trends {
+  background-color: #403c4a;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  font-family: "Titillium Web";
+}
+
+.trends li a {
+  color: white;
+  z-index: -2;
+}
+
+.trends li a.active {
+  color: #a39a01;
+}
+.trends li a:hover, .trends li a:focus {
+  color: #a39a01;
+  text-decoration: none;
+  -webkit-transition: all .2s; /* Safari */
+  transition: all .5s;
+}
+
+.sidebar {
+  color: white;
+}
+.sidebar span:before {
+  color: #a39a01;
+}
+
+div.row.home-carousel {
+  margin: 80px -15px;
+  color: white;
+}
+
+.home-carousel h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.carousel {
+  margin-bottom: 50px;
+}
+.carousel-inner .item img{
+  width: 100%;
+}
+
+.carousel-control.right {
+  top: inherit;
+  left: 0%;
+  bottom: -10px;
+  background: none;
+  text-shadow: none;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.carousel-control.left {
+  top: inherit;
+  left: -9%;
+  bottom: -10px;
+  background: none;
+  text-shadow: none;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.carousel-indicators {
+  bottom: -38px;
+  padding-right: 90px;
+}
+.carousel-indicators .active {
+  background-color: #a39a01;
+  margin: 0 5px;
+}
+
+.carousel-indicators li {
+  background-color: white;
+  border: none;
+  margin: 0 5px;
+}
+
+.carousel-control .icon-next, .carousel-control .icon-prev {
+  color: white;
+}
+
+.carousel-control .icon-next:hover, .carousel-control .icon-prev:hover,
+.carousel-control .icon-next:focus, .carousel-control .icon-prev:focus{
+  color: #a39a01;
+  -webkit-transition: all .2s; /* Safari */
+  transition: all .5s;
+}
+
+.carousel-control .icon-next:before {
+  font-family: Flaticon;
+  content: "\F118";
+  font-size: 18px;
+  font-style: normal;
+  margin-left: 20px;
+}
+
+.carousel-control .icon-prev:before {
+  font-family: Flaticon;
+  content: "\F119";
+  font-size: 18px;
+  font-style: normal;
+  margin-left: 20px;
+}
+
+.slide-cap {
+  position: absolute;
+  width: 50%;
+  top: 40px;
+  right: -52%;
+  background-color: transparent;
+  color: white;
+  z-index: 1;
+  padding: 15px 30px 15px 0px;
+  height:100%;
+}
+.slide-cap h3 {
+  font-weight: bold;
+}
+.slide-cap span {
+  position: absolute;
+  bottom: 40px;
+  display: none;
+}
+.slide-cap i:before {
+  margin-left: 0;
+  color: #a39a01;
+}
+.carousel-inner {
+  overflow: visible;
+  z-index: 1;
+}
+@media (max-width: 767px) {
+
+  .carousel-control.right {
+    right: -2%;
+    bottom: -18px;
+  }
+
+  .carousel-control.left {
+    left: 75%;
+    bottom: -18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-inner, .left-carousel {
+    height: 210px;
+  }
+  .left-carousel {
+    padding: 15px 30px 0 15px;
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    top: 30px;
+  }
+  .left-carousel:before {
+    content: " ";
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #a39a01;
+    height: 100%;
+    width: 200%;
+    z-index: -1;
+  }
+  .slide-cap p {
+    display: none;
+  }
+
+}
+@media (min-width: 992px) {
+  .carousel-inner, .left-carousel {
+    height: 275px;
+  }
+  .slide-cap p {
+    display: block;
+  }
+  .slide-cap span {
+    display: block;
+  }
+
+}
+
+@media (min-width: 1200px) {
+  .carousel-inner, .left-carousel {
+    height: 335px;
+  }
+
+}

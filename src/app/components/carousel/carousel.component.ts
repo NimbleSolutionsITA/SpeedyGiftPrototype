@@ -11,7 +11,10 @@ import {Image} from './image.interface';
   //Template for the tag
   templateUrl: 'carousel.component.html',
   //Styles for the tag
-  styleUrls: ['carousel.component.css'],
+  styleUrls: [
+    'carousel.component.css',
+    '../../../assets/css/flaticon.css'
+  ],
   animations: [
     trigger('carouselState', [
       state('start', style({

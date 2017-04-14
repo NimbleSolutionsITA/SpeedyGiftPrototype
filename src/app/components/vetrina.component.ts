@@ -14,7 +14,7 @@ import { Component } from '@angular/core';
     <footer></footer>
   `,
   styleUrls: [
-    './app.component.css'
+    '../app.component.css'
   ]
 })
 

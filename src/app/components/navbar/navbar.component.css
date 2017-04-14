@@ -28,6 +28,7 @@ ul.nav.navbar-nav, .navbar-header {
   font-weight: bold;
   color: #403c4a;
   font-size: 15px;
+  cursor: pointer;
 }
 
 .navbar-nav a:hover, a:focus, a:hover {
@@ -39,18 +40,22 @@ ul.nav.navbar-nav, .navbar-header {
 
 .navbar-nav.navbar-right a {
   color: #c74a6c;
+  padding: 15px 5px;
 }
 .social-login, .form {
   padding-top: 20px;
 }
-.nav-icons {
-  padding:18px 15px 18px 0;
+.nav-icons:hover i, .nav-icons.active i {
+  color: #c74a6c;
+  border-bottom: 2px solid #c74a6c;
+  -webkit-transition: all .2s; /* Safari */
+  transition: all .5s;
 }
-
 .nav-icons i {
-  margin-left: 5px;
+  margin-left: 0px;
+  color: #403c4a;
 }
-.login {
+.login, .gruppo {
   position: relative;
   overflow: hidden;
   box-shadow: inset 1px 4px 9px -6px;
@@ -118,7 +123,7 @@ ul.nav.navbar-nav, .navbar-header {
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-size: 16px !important;
-  margin-left: 15px !important;
+  margin-left: 0px !important;
 }
 input[type=checkbox]:not(old){
   width   : 28px;
@@ -170,6 +175,149 @@ a.sub-password {
   color: #9e7c97;
   margin-right: 10px;
 }
+.gruppo {
+  margin-bottom: 20px;
+}
+.gruppo .gift-head {
+  clear: both;
+  width: 100%;
+  display: inline-block;
+  padding-left: 20px;
+}
+
+.gruppo .gift-head h3 {
+  text-transform: uppercase;
+  float: left;
+  font-weight: bold;
+}
+.gruppo .gift-head p {
+  font-weight: bold;
+  float: right;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #c74a6c;
+}
+.gruppo .gift-head span {
+  color: #403c4a;
+}
+.gruppo ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  text-transform: uppercase;
+  margin-top: -10px;
+  margin-left: 20px;
+}
+.gruppo ul li {
+  margin-right: 15px;
+  cursor: pointer;
+}
+.gruppo ul li a.active {
+  color: #c74a6c;
+}
+.gruppo table {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: .9em;
+}
+.gruppo table tr {
+  border: thin solid #e6e6e6;
+}
+.gruppo td {
+  padding: 5px 20px;
+  color: #a39a01;
+}
+.gruppo td.price {
+  background-color: #a39a01;
+  color: white;
+  width: 50px;
+}
+.gruppo .paid td {
+  color: #c74a6c;
+}
+.gruppo .paid td.price {
+  background-color: #c74a6c;
+  color: white;
+}
+.gruppo table .table-space {
+  display: block;
+  margin: 5px;
+}
+.gruppo a.group-add {
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 5px;
+  display: block;
+}
+.gruppo a.group-add span {
+  font-size: 1.5em;
+  margin-right: 5px;
+}
+.gruppo .group-mid {
+  background-image: url("../../../assets/images/group-marco.jpg");
+  background-size: cover;
+}
+.gruppo .group-mid .info-prod {
+  background-color: rgba(163, 154, 1, 0.75);
+  color: white;
+  padding: 10px 15px 1px;
+  margin: 80px 0 15px;
+}
+.gruppo .group-mid .info-prod p {
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-size: .75em;
+}
+.gruppo .group-mid .info-prod h5 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.gruppo .group-mid .info-prod hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-color: #a39a01;
+}
+.gruppo .group-dx {
+  background-color: #403c4a;
+  padding: 20px 40px;
+}
+.gruppo .group-dx table {
+  text-transform: none;
+}
+.gruppo .group-dx table tr {
+  border: none;
+}
+.gruppo .group-dx table td {
+  color: white;
+  font-weight: 100;
+  padding-left: 0;
+  padding-right: 0;
+}
+.gruppo .group-dx table td:nth-child(2) {
+  text-align: right;
+}
+.gruppo .group-dx button {
+  color: white;
+  text-transform: uppercase;
+  background-color: #a39a01;
+  border: none;
+  text-align: center;
+  padding:7px;
+  font-size: 12px;
+  width: 100%;
+  margin-top: 10px;
+}
+.gruppo .group-dx .negative {
+  background-color: transparent;
+  border: 2px solid #a39a01;
+}
+@media (max-width: 767px) {
+  .navbar .navbar-right li {
+    float: left;
+    margin-left: 15px;
+  }
+}
 @media (min-width: 768px) {
   .navbar {
     border-radius: 0;
@@ -184,5 +332,14 @@ a.sub-password {
     top: 0;
     bottom: 0;
     z-index: -1;
+  }
+  .gruppo .group-mid:after {
+    content: ' ';
+    background-color: #403c4a;
+    position: absolute;
+    height: 100%;
+    width: 9999em;
+    right: -9999em;
+    top: 0;
   }
 }

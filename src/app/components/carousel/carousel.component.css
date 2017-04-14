@@ -7,6 +7,7 @@
 .carousel {
   overflow: hidden;
   width: 100%;
+  margin-bottom: 50px;
 }
 .slide {
   background: white;
@@ -22,6 +23,11 @@
   -moz-animation: carousel 30s infinite;
   -webkit-animation: carousel 30s infinite;
   animation: carousel 30s infinite;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: #c74a6c;
+  background-color: transparent;
+  font-weight: bolder;
 }
 li {
  background-color: transparent;

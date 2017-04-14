@@ -1,7 +1,7 @@
 a:hover, a:focus, a:hover,
 a span.flaticon-arrows-1:hover, a span.flaticon-arrows-1:focus, a span.flaticon-arrows-1:hover {
   text-decoration: none;
-  color: #cdbd11;
+  color: #a39a01;
   -webkit-transition: all .2s; /* Safari */
   transition: all .5s;
 }
@@ -24,10 +24,10 @@ a span.flaticon-arrows-1:before {
 }
 
 .trends li a.active {
-  color: #cdbd11;
+  color: #a39a01;
 }
 .trends li a:hover, .trends li a:focus {
-  color: #cdbd11;
+  color: #a39a01;
   text-decoration: none;
   -webkit-transition: all .2s; /* Safari */
   transition: all .5s;
@@ -159,22 +159,22 @@ div.row.home-carousel {
 
 .carousel-control .icon-next:hover, .carousel-control .icon-prev:hover,
 .carousel-control .icon-next:focus, .carousel-control .icon-prev:focus{
-  color: #cdbd11;
+  color: #a39a01;
   -webkit-transition: all .2s; /* Safari */
   transition: all .5s;
 }
 
 .carousel-control .icon-next:before {
   font-family: Flaticon;
-  content: "\f100";
-  font-size: 20px;
+  content: "\F118";
+  font-size: 18px;
   font-style: normal;
   margin-left: 20px;
 }
 
 .carousel-control .icon-prev:before {
   font-family: Flaticon;
-  content: "\f101";
+  content: "\F119";
   font-size: 18px;
   font-style: normal;
   margin-left: 20px;

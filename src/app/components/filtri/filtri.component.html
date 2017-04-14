@@ -8,96 +8,93 @@
       <div class="col-xs-12 col-sm-9">
         <div class="filter">
           <div class="box">
-            <button (click)="brand = !brand">Brand <span class="flaticon-plus-symbol"></span></button>
+            <button (click)="filter = 1">Brand <span class="flaticon-plus-symbol"></span></button>
           </div>
           <div class="drop">
-            <div *ngIf="brand" [@flyInOutBrand] class="options">
-              <p>BRAND<span (click)="brand = !brand" class="flaticon-cancel"></span></p>
+            <div *ngIf="filter == 1" [@flyInOutBrand] class="options">
+              <p>BRAND<span (click)="filter = 0" class="flaticon-cancel"></span></p>
               <ul>
-                <li (click)="brand = !brand"><a>Nike</a></li>
-                <li (click)="brand = !brand"><a>Adidas</a></li>
-                <li (click)="brand = !brand"><a>Reebok</a></li>
-                <li (click)="brand = !brand"><a>La Perla</a></li>
-                <li (click)="brand = !brand"><a>Lacoste</a></li>
-                <li (click)="brand = !brand"><a>Fred Perry</a></li>
-                <li (click)="brand = !brand"><a>Ralph Lauren</a></li>
+                <li (click)="filter = 0"><a>Nike</a></li>
+                <li (click)="filter = 0"><a>Adidas</a></li>
+                <li (click)="filter = 0"><a>Reebok</a></li>
+                <li (click)="filter = 0"><a>La Perla</a></li>
+                <li (click)="filter = 0"><a>Lacoste</a></li>
+                <li (click)="filter = 0"><a>Fred Perry</a></li>
+                <li (click)="filter = 0"><a>Ralph Lauren</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="filter">
           <div class="box">
-            <button (click)="colorprod = !colorprod">Colore <span class="flaticon-plus-symbol"></span></button>
+            <button (click)="filter = 2">Colore <span class="flaticon-plus-symbol"></span></button>
           </div>
           <div class="drop">
-            <div *ngIf="colorprod" [@flyInOutColor] class="options">
-              <p>COLORE<span (click)="colorprod = !colorprod" class="flaticon-cancel"></span></p>
-              <div class="colorpick"><div (click)="colorprod = !colorprod" class=" green"></div></div>
-              <div class="colorpick"><div (click)="colorprod = !colorprod" class=" blue"></div></div>
-              <div class="colorpick"><div (click)="colorprod = !colorprod" class=" red"></div></div>
-              <div class="colorpick"><div (click)="colorprod = !colorprod" class=" grey"></div></div>
-              <div class="colorpick"><div (click)="colorprod = !colorprod" class=" yellow"></div></div>
-              <div class="colorpick"><div (click)="colorprod = !colorprod" class=" purple"></div></div>
-              <div class="colorpick"><div (click)="colorprod = !colorprod" class=" beige"></div></div>
-              <div class="colorpick"><div (click)="colorprod = !colorprod" class=" orange"></div></div>
+            <div *ngIf="filter == 2" [@flyInOutColor] class="options">
+              <p>COLORE<span (click)="filter = 0" class="flaticon-cancel"></span></p>
+              <div class="colorpick"><div (click)="filter = 0" class=" green"></div></div>
+              <div class="colorpick"><div (click)="filter = 0" class=" blue"></div></div>
+              <div class="colorpick"><div (click)="filter = 0" class=" red"></div></div>
+              <div class="colorpick"><div (click)="filter = 0" class=" grey"></div></div>
+              <div class="colorpick"><div (click)="filter = 0" class=" yellow"></div></div>
+              <div class="colorpick"><div (click)="filter = 0" class=" purple"></div></div>
+              <div class="colorpick"><div (click)="filter = 0" class=" beige"></div></div>
+              <div class="colorpick"><div (click)="filter = 0" class=" orange"></div></div>
               <br>
-              <a style="text-align: center; margin: 90px 0 0; display: block; color: #403c4a; cursor: pointer;">APPLICA</a>
+              <a (click)="filter = 0" style="text-align: center; margin: 90px 0 0; display: block; color: #403c4a; cursor: pointer;">APPLICA</a>
             </div>
           </div>
         </div>
         <div class="filter">
           <div class="box">
-            <button (click)="size = !size">Taglia <span class="flaticon-plus-symbol"></span></button>
+            <button (click)="filter = 3">Taglia <span class="flaticon-plus-symbol"></span></button>
           </div>
           <div class="drop">
-            <div *ngIf="size" [@flyInOutSize] class="options">
-              <p>TAGLIA<span (click)="size = !size" class="flaticon-cancel"></span></p>
+            <div *ngIf="filter == 3" [@flyInOutSize] class="options">
+              <p>TAGLIA<span (click)="filter = 0" class="flaticon-cancel"></span></p>
               <ul>
-                <li (click)="size = !size"><a>Nike</a></li>
-                <li (click)="size = !size"><a>Adidas</a></li>
-                <li (click)="size = !size"><a>Reebok</a></li>
-                <li (click)="size = !size"><a>La Perla</a></li>
-                <li (click)="size = !size"><a>Lacoste</a></li>
-                <li (click)="size = !size"><a>Fred Perry</a></li>
-                <li (click)="size = !size"><a>Ralph Lauren</a></li>
+                <li (click)="filter = 0"><a>XXL</a></li>
+                <li (click)="filter = 0"><a>XL</a></li>
+                <li (click)="filter = 0"><a>Large</a></li>
+                <li (click)="filter = 0"><a>Medium</a></li>
+                <li (click)="filter = 0"><a>Small</a></li>
+                <li (click)="filter = 0"><a>XS</a></li>
+                <li (click)="filter = 0"><a>XXS</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="filter">
           <div class="box">
-            <button (click)="price = !brand">Prezzo <span class="flaticon-plus-symbol"></span></button>
+            <button (click)="filter = 4">Prezzo <span class="flaticon-plus-symbol"></span></button>
           </div>
           <div class="drop">
-            <div *ngIf="price" [@flyInOutPrice] class="options">
-              <p>PREZZO<span (click)="price = !price" class="flaticon-cancel"></span></p>
+            <div *ngIf="filter == 4" [@flyInOutPrice] class="options">
+              <p>PREZZO<span (click)="filter = 0" class="flaticon-cancel"></span></p>
               <ul>
-                <li (click)="price = !price"><a>Nike</a></li>
-                <li (click)="price = !brand"><a>Adidas</a></li>
-                <li (click)="price = !price"><a>Reebok</a></li>
-                <li (click)="price = !price"><a>La Perla</a></li>
-                <li (click)="price = !price"><a>Lacoste</a></li>
-                <li (click)="price = !price"><a>Fred Perry</a></li>
-                <li (click)="price = !price"><a>Ralph Lauren</a></li>
+                <li (click)="filter = 0"><a>Meno di 10€</a></li>
+                <li (click)="filter = 0"><a>Fino a 50€</a></li>
+                <li (click)="filter = 0"><a>Fino a 100€</a></li>
+                <li (click)="filter = 0"><a>Fino a 200€</a></li>
+                <li (click)="filter = 0"><a>Fino a 300€</a></li>
+                <li (click)="filter = 0"><a>Fino a 400€</a></li>
+                <li (click)="filter = 0"><a>Fino a 500€</a></li>
               </ul>
             </div>
           </div>
         </div>
         <div class="filter">
           <div class="box">
-            <button (click)="order = !order">Ordina <span class="flaticon-plus-symbol"></span></button>
+            <button (click)="filter = 5">Ordina <span class="flaticon-plus-symbol"></span></button>
           </div>
           <div class="drop">
-            <div *ngIf="order" [@flyInOutOrder] class="options">
-              <p>ORDINA<span (click)="order = !order" class="flaticon-cancel"></span></p>
+            <div *ngIf="filter == 5" [@flyInOutOrder] class="options">
+              <p>ORDINA<span (click)="filter = 0" class="flaticon-cancel"></span></p>
               <ul>
-                <li (click)="order = !order"><a>Nike</a></li>
-                <li (click)="order = !order"><a>Adidas</a></li>
-                <li (click)="order = !order"><a>Reebok</a></li>
-                <li (click)="order = !order"><a>La Perla</a></li>
-                <li (click)="order = !order"><a>Lacoste</a></li>
-                <li (click)="order = !order"><a>Fred Perry</a></li>
-                <li (click)="order = !order"><a>Ralph Lauren</a></li>
+                <li (click)="filter = 0"><a>Più economico</a></li>
+                <li (click)="filter = 0"><a>Più costoso</a></li>
+                <li (click)="filter = 0"><a>Più recente</a></li>
+                <li (click)="filter = 0"><a>Meno recente</a></li>
               </ul>
             </div>
           </div>

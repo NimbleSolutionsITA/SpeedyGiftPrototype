@@ -20,26 +20,24 @@
          (expanded)="expanded($event)"
          [collapse]="isCollapsed">
       <ul class="nav navbar-nav">
-        <li><a href="/vetrina">Vetrina</a></li>
-        <li><a href="#">Regalo</a></li>
-        <li><a href="#">Novità</a></li>
-        <li><a href="#">Chi Siamo</a></li>
+        <li *ngFor="let navMenuItem of navMenuItems; let i = index" [class.active]="navMenuItem.active">
+          <a routerLink="{{navMenuItem.url}}">{{navMenuItem.name}}</a>
+        </li>
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li><a (click)="accedi = !accedi">Accedi</a></li>
+        <li [class.active]="gruppo" class="nav-icons"><a (click)="gruppo = !gruppo"><i class="flaticon-christmas" aria-hidden="true"></i></a></li>
+        <li class="nav-icons"><a routerLink="#"><i class="flaticon-shopping-bag" aria-hidden="true"></i></a></li>
+        <li class="nav-icons"><a routerLink="#"><i class="flaticon-shapes" aria-hidden="true"></i></a></li>
+        <li [class.active]="accedi"><a (click)="accedi = !accedi">Accedi</a></li>
+        <li class="nav-icons"><a routerLink="#"><i class="flaticon-magnifying-glass" aria-hidden="true"></i></a></li>
       </ul>
-
-      <div class="nav-icons navbar-right">
-        <a href="#"><i class="flaticon-shapes" aria-hidden="true"></i></a>
-        <a href="#"><i class="flaticon-shopping-bag" aria-hidden="true"></i></a>
-        <a href="#"><i class="flaticon-magnifying-glass" aria-hidden="true"></i></a>
-      </div>
 
     </div><!-- /.navbar-collapse -->
 
   </div><!-- /.container-fluid -->
 </nav>
+
 <div *ngIf="accedi" [@flyInOut] class="login">
   <div class="container">
     <div class="row">
@@ -52,7 +50,7 @@
               <show-hide-container>
                 <input class="form-control forgot" type="password" #showhideinput [ngModel]="password" style="margin-bottom: 0;"/>
               </show-hide-container>
-              <a href="#" class="sub-password">Hai dimenticato la password?</a>
+              <a routerLink="#" class="sub-password">Hai dimenticato la password?</a>
             </div>
             <input id="option" type="checkbox" name="field" value="option" checked>
             <label for="option" style="margin-bottom: 13px;"><span><span></span></span>Ricordami su questo dispositivo</label>
@@ -68,8 +66,8 @@
                 <input class="form-control" type="password" #showhideinput [ngModel]="password" style="margin-bottom: 0;" />
               </show-hide-container>
             </div>
-            <button class="btn btn-default">Registrati</button>
-            <p class="subform">Cliccadno su "Registrati" accett i <a href="#">Termini e Condizioni</a> di servizi forniti da SpeedyGift</p>
+            <a routerLink="/registrazione"><button class="btn btn-default">Registrati</button></a>
+            <p class="subform">Cliccadno su "Registrati" accett i <a routerLink="#">Termini e Condizioni</a> di servizi forniti da SpeedyGift</p>
           </div>
         </div>
       </div>
@@ -77,17 +75,249 @@
         <h4>Oppure accedi con</h4>
         <p>Non pubblicheremo mai nessun contenuto senza il tuo permesso</p>
         <div class="social">
-          <a href="#"><i class="fa fa-facebook-f"></i></a>
-          <a href="#"><i class="fa fa-twitter"></i></a>
-          <a href="#"><i class="fa fa-google-plus"></i></a>
+          <a routerLink="#"><i class="fa fa-facebook-f"></i></a>
+          <a routerLink="#"><i class="fa fa-twitter"></i></a>
+          <a routerLink="#"><i class="fa fa-google-plus"></i></a>
         </div>
         <br><br><br>
         <h5>Ti serve supporto?</h5>
         <p>Siamo qui per aiutarti.</p>
         <div class="contact">
           <p><i class="fa fa-phone"></i> +39 06 50 43 123 </p>
-          <a href="mailto:info@speedygify.it"><i class="fa fa-envelope"></i> info@speedygify.it</a>
+          <a routerLink="mailto:info@speedygify.it"><i class="fa fa-envelope"></i> info@speedygify.it</a>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="gruppo" [@flyInOut] class="gruppo">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-5">
+        <div class="gift-head">
+          <h3>Regalo per</h3>
+          <p *ngIf="giftTab == 1" class=""><span class="flaticon-time"></span> 3G 15H</p>
+          <p *ngIf="giftTab == 2"><span class="flaticon-time"></span> 1G 13H</p>
+          <p *ngIf="giftTab == 3"><span class="flaticon-time"></span> 5G 4H</p>
+        </div>
+        <ul>
+          <li><a [class.active]="giftTab == 1" (click)="giftTab = 1">Marco</a></li>
+          <li><a [class.active]="giftTab == 2" (click)="giftTab = 2">Giorgia</a></li>
+          <li><a [class.active]="giftTab == 3" (click)="giftTab = 3">Matteo</a></li>
+        </ul>
+        <table *ngIf="giftTab == 1">
+          <tr class="paid">
+            <td>Marco Verde</td>
+            <td class="price">30€</td>
+          </tr>
+          <div class="table-space"></div>
+          <tr>
+            <td>Stefano Rossi</td>
+            <td class="price">30€</td>
+          </tr>
+          <div class="table-space"></div>
+          <tr>
+            <td>Luca Pigno</td>
+            <td class="price">30€</td>
+          </tr>
+          <div class="table-space"></div>
+          <tr>
+            <td>Giorgio Forlani</td>
+            <td class="price">30€</td>
+          </tr>
+          <div class="table-space"></div>
+          <tr>
+            <td>Elena Adreini</td>
+            <td class="price">30€</td>
+          </tr>
+          <div class="table-space"></div>
+          <tr class="paid">
+            <td>Stefania Bacci</td>
+            <td class="price">30€</td>
+          </tr>
+        </table>
+        <table *ngIf="giftTab == 2">
+          <tr>
+            <td>Carto Ottavi</td>
+            <td class="price">25€</td>
+          </tr>
+          <div class="table-space"></div>
+          <tr class="paid">
+            <td class="paid">Marta Lorenzi</td>
+            <td class="price">25€</td>
+          </tr>
+          <div class="table-space"></div>
+          <tr class="paid">
+            <td class="paid">Andrea Bolti</td>
+            <td class="price">25€</td>
+          </tr>
+          <div class="table-space"></div>
+          <tr class="paid">
+            <td>Chiara Pederzi</td>
+            <td class="price">25€</td>
+          </tr>
+          <div class="table-space"></div>
+          <tr>
+            <td>Ettore Scifoni</td>
+            <td class="price">25€</td>
+          </tr>
+        </table>
+        <table *ngIf="giftTab == 3">
+          <tr class="paid">
+            <td>Sebastiano Mori</td>
+            <td class="price">10€</td>
+          </tr>
+          <div class="table-space"></div>
+          <tr class="paid">
+            <td>Valerio De Nittis</td>
+            <td class="price">10€</td>
+          </tr>
+          <div class="table-space"></div>
+          <tr>
+            <td>Carlotta Federici</td>
+            <td class="price">10€</td>
+          </tr>
+          <div class="table-space"></div>
+          <tr class="paid">
+            <td>Emanuele Tarducci</td>
+            <td class="price">10€</td>
+          </tr>
+          <div class="table-space"></div>
+          <tr>
+            <td>Michele Piepolo</td>
+            <td class="price">10€</td>
+          </tr>
+          <div class="table-space"></div>
+          <tr>
+            <td>Giancarlo Fisichella</td>
+            <td class="price">10€</td>
+          </tr>
+        </table>
+        <a class="group-add"><span>+</span> Aggiungi un amico</a>
+      </div>
+      <div class="col-sm-3 group-mid" >
+        <div *ngIf="giftTab == 1" class="info-prod">
+          <p>Brand</p>
+          <h5>Product Name 1</h5>
+          <p>Taglia: M</p>
+          <p>Colore: Rosa</p>
+          <hr>
+          <p>Spedizione</p>
+          <h5>EXPRESS</h5>
+          <p>Pacchetto</p>
+          <h5>FANTASIA BLU</h5>
+          <p>Biglietto</p>
+          <h5>FANTASIA ROSSO</h5>
+        </div>
+        <div *ngIf="giftTab == 2" class="info-prod">
+          <p>Brand</p>
+          <h5>Product Name 2</h5>
+          <p>Taglia: 44</p>
+          <p>Colore: Verde</p>
+          <hr>
+          <p>Spedizione</p>
+          <h5>EXPRESS</h5>
+          <p>Pacchetto</p>
+          <h5>FANTASIA GIALLO</h5>
+          <p>Biglietto</p>
+          <h5>FANTASIA VERDE</h5>
+        </div>
+        <div *ngIf="giftTab == 3" class="info-prod">
+          <p>Brand</p>
+          <h5>Product Name 3</h5>
+          <p>Taglia: XS</p>
+          <p>Colore: Blu</p>
+          <hr>
+          <p>Spedizione</p>
+          <h5>SAMEDAY</h5>
+          <p>Pacchetto</p>
+          <h5>FANTASIA BLU</h5>
+          <p>Biglietto</p>
+          <h5>FANTASIA BLU</h5>
+        </div>
+      </div>
+      <div class="col-sm-4 group-dx">
+        <table *ngIf="giftTab == 1">
+          <tr>
+            <td>Subtotale</td>
+            <td>250,00€</td>
+          </tr>
+          <tr>
+            <td>Spedizione</td>
+            <td>10,00€</td>
+          </tr>
+          <tr>
+            <td>Pacchetto</td>
+            <td>10,00€</td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 20px;">Biglietto</td>
+            <td style="padding-bottom: 20px;">5,00€</td>
+          </tr>
+          <tr style="border-bottom: thin solid #9e7c97; border-top: thin solid #9e7c97;">
+            <td>Totale</td>
+            <td style="font-size: 1.4em;">275,00€</td>
+          </tr>
+          <tr>
+            <td>Da pagare</td>
+            <td style="color: #c74a6c; font-size: 1.4em;">200,00€</td>
+          </tr>
+        </table>
+        <table *ngIf="giftTab == 2">
+          <tr>
+            <td>Subtotale</td>
+            <td>190,00€</td>
+          </tr>
+          <tr>
+            <td>Spedizione</td>
+            <td>10,00€</td>
+          </tr>
+          <tr>
+            <td>Pacchetto</td>
+            <td>10,00€</td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 20px;">Biglietto</td>
+            <td style="padding-bottom: 20px;">5,00€</td>
+          </tr>
+          <tr style="border-bottom: thin solid #9e7c97; border-top: thin solid #9e7c97;">
+            <td>Totale</td>
+            <td style="font-size: 1.4em;">215,00€</td>
+          </tr>
+          <tr>
+            <td>Da pagare</td>
+            <td style="color: #c74a6c; font-size: 1.4em;">140,00€</td>
+          </tr>
+        </table>
+        <table *ngIf="giftTab == 3">
+          <tr>
+            <td>Subtotale</td>
+            <td>160,00€</td>
+          </tr>
+          <tr>
+            <td>Spedizione</td>
+            <td>15,00€</td>
+          </tr>
+          <tr>
+            <td>Pacchetto</td>
+            <td>10,00€</td>
+          </tr>
+          <tr>
+            <td style="padding-bottom: 20px;">Biglietto</td>
+            <td style="padding-bottom: 20px;">5,00€</td>
+          </tr>
+          <tr style="border-bottom: thin solid #9e7c97; border-top: thin solid #9e7c97;">
+            <td>Totale</td>
+            <td style="font-size: 1.4em;">190,00€</td>
+          </tr>
+          <tr>
+            <td>Da pagare</td>
+            <td style="color: #c74a6c; font-size: 1.4em;">160,00€</td>
+          </tr>
+        </table>
+        <button>Acquista</button>
+        <button class="negative">Rimuovi Regalo</button>
       </div>
     </div>
   </div>

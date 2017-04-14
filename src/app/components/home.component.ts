@@ -1,6 +1,4 @@
 import { Component } from '@angular/core';
-//import our Carousel Component
-import {CSSCarouselComponent} from './components/carousel/carousel.component';
 
 @Component({
   selector: 'home',
@@ -20,7 +18,7 @@ import {CSSCarouselComponent} from './components/carousel/carousel.component';
     <footer></footer>
   `,
   styleUrls: [
-    './app.component.css'
+    '../app.component.css'
   ]
 })
 

@@ -11,7 +11,7 @@
       <div class="carousel">
         <ul [@carouselState]="state" class="slides">
           <li *ngFor="let image of images; let i = index" [class.active]="image.active">
-            <a href="/prodotto">
+            <a routerLink="/prodotto">
               <div class="slide">
                 <img src="{{image.url}}" alt="">
                 <span class="brand"><p>{{image.brand}}</p></span>

@@ -1,0 +1,321 @@
+<div class=wizardgift>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <div class="line">
+          <div [class.active]="step==1" [class.done]="step>1" class="circle"><span></span></div>
+          <div [class.active]="step==2" [class.done]="step>2" class="circle"><span></span></div>
+          <div [class.active]="step==3" [class.done]="step>3" class="circle"><span></span></div>
+          <div [class.active]="step==4" [class.done]="step>4" class="circle"><span></span></div>
+          <div [class.active]="step==5" [class.done]="step>5" class="circle"><span></span></div>
+          <div [class.active]="step==6" [class.done]="step>6" class="circle"><span></span></div>
+        </div>
+        <div class="step">
+          <h2 [class.active]="step==1">1</h2>
+          <h2 [class.active]="step==2">2</h2>
+          <h2 [class.active]="step==3">3</h2>
+          <h2 [class.active]="step==4">4</h2>
+          <h2 [class.active]="step==5">5</h2>
+          <h2 [class.active]="step==6">6</h2>
+        </div>
+        <div [class.active]="step==1" class="question">
+          <h2>Mi interessa...</h2>
+          <p>Scegli una o più categorie per segnalarci i tuoi interessi</p>
+        </div>
+        <div [class.active]="step==2" class="question">
+          <h2>Domanda numero due</h2>
+          <p>Scegli una risposta</p>
+        </div>
+        <div [class.active]="step==3" class="question">
+          <h2>Domanda numero tre</h2>
+          <p>Scegli una risposta</p>
+        </div>
+        <div [class.active]="step==4" class="question">
+          <h2>Domanda numero quattro</h2>
+          <p>Scegli una risposta</p>
+        </div>
+        <div [class.active]="step==5" class="question">
+          <h2>Domanda numero cinque</h2>
+          <p>Scegli una risposta</p>
+        </div>
+        <div [class.active]="step==6" class="question">
+          <h2>Domanda numero sei</h2>
+          <p>Scegli una risposta</p>
+        </div>
+      </div>
+      <div class="col-sm-9">
+
+        <div [class.active]="step==1" class="row box">
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-woman"></span>
+              <h4>Abbigliamento</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-fashion-2"></span>
+              <h4>Accessori</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-fashion"></span>
+              <h4>Bambini</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-fashion-1"></span>
+              <h4>Scarpe</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-diamond"></span>
+              <h4>Gioielli</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-cosmetics"></span>
+              <h4>Bellezza</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-hand-bag"></span>
+              <h4>Borse</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-home"></span>
+              <h4>Casa</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-technology-1"></span>
+              <h4>Gadget</h4>
+            </div>
+          </div>
+        </div>
+
+        <div [class.active]="step==2" class="row box">
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-marriage-rings-couple-with-a-heart"></span>
+              <h4>Matrimonio</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-shapes"></span>
+              <h4>Anniversario</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-technology"></span>
+              <h4>Compleanno</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-school"></span>
+              <h4>Laurea</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-diploma"></span>
+              <h4>Diploma</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-stripes"></span>
+              <h4>Promozione</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-handshake"></span>
+              <h4>Ringraziamento</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-party"></span>
+              <h4>Festa</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-transport"></span>
+              <h4>Bambino</h4>
+            </div>
+          </div>
+        </div>
+
+        <div [class.active]="step==3" class="row box">
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-marriage-rings-couple-with-a-heart"></span>
+              <h4>Matrimonio</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-shapes"></span>
+              <h4>Anniversario</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-technology"></span>
+              <h4>Compleanno</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-school"></span>
+              <h4>Laurea</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-diploma"></span>
+              <h4>Diploma</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-stripes"></span>
+              <h4>Promozione</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-handshake"></span>
+              <h4>Ringraziamento</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-party"></span>
+              <h4>Festa</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-transport"></span>
+              <h4>Bambino</h4>
+            </div>
+          </div>
+        </div>
+
+        <div [class.active]="step==4" class="row box">
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-marriage-rings-couple-with-a-heart"></span>
+              <h4>Matrimonio</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-shapes"></span>
+              <h4>Anniversario</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-technology"></span>
+              <h4>Compleanno</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-school"></span>
+              <h4>Laurea</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-diploma"></span>
+              <h4>Diploma</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-stripes"></span>
+              <h4>Promozione</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-handshake"></span>
+              <h4>Ringraziamento</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-party"></span>
+              <h4>Festa</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-transport"></span>
+              <h4>Bambino</h4>
+            </div>
+          </div>
+        </div>
+
+        <div [class.active]="step==5" class="row box">
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-marriage-rings-couple-with-a-heart"></span>
+              <h4>Matrimonio</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-shapes"></span>
+              <h4>Anniversario</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-technology"></span>
+              <h4>Compleanno</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-school"></span>
+              <h4>Laurea</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-diploma"></span>
+              <h4>Diploma</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-stripes"></span>
+              <h4>Promozione</h4>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-handshake"></span>
+              <h4>Ringraziamento</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-party"></span>
+              <h4>Festa</h4>
+            </div>
+            <div (click)="step=step+1" class="answer">
+              <span class="flaticon-transport"></span>
+              <h4>Bambino</h4>
+            </div>
+          </div>
+        </div>
+
+        <div [class.active]="step==6" class="row box">
+          <div class="col-sm-4">
+            <a routerLink="/wizardresult"><div class="answer">
+              <span class="flaticon-marriage-rings-couple-with-a-heart"></span>
+              <h4>Matrimonio</h4>
+            </div></a>
+            <a routerLink="/wizardresult"><div class="answer">
+              <span class="flaticon-shapes"></span>
+              <h4>Anniversario</h4>
+            </div></a>
+            <a routerLink="/wizardresult"><div class="answer">
+              <span class="flaticon-technology"></span>
+              <h4>Compleanno</h4>
+            </div></a>
+          </div>
+          <div class="col-sm-4">
+            <a routerLink="/wizardresult"><div class="answer">
+              <span class="flaticon-school"></span>
+              <h4>Laurea</h4>
+            </div></a>
+            <a routerLink="/wizardresult"><div class="answer">
+              <span class="flaticon-diploma"></span>
+              <h4>Diploma</h4>
+            </div></a>
+            <a routerLink="/wizardresult"><div class="answer">
+              <span class="flaticon-stripes"></span>
+              <h4>Promozione</h4>
+            </div></a>
+          </div>
+          <div class="col-sm-4">
+            <a routerLink="/wizardresult"><div class="answer">
+              <span class="flaticon-handshake"></span>
+              <h4>Ringraziamento</h4>
+            </div></a>
+            <a routerLink="/wizardresult"><div class="answer">
+              <span class="flaticon-party"></span>
+              <h4>Festa</h4>
+            </div></a>
+            <a routerLink="/wizardresult"><div class="answer">
+              <span class="flaticon-transport"></span>
+              <h4>Bambino</h4>
+            </div></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

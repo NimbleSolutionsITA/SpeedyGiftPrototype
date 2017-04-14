@@ -8,9 +8,12 @@ import { CollapseModule } from 'ng2-bootstrap/collapse';
 import { RouterModule }   from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home.component';
-import { VetrinaComponent } from './vetrina.component';
-import { ProdottoComponent } from './prodotto.component';
+import { HomeComponent } from './components/home.component';
+import { VetrinaComponent } from './components/vetrina.component';
+import { ProdottoComponent } from './components/prodotto.component';
+import { WizardComponent } from './components/wizard.component';
+import { RegistrazioneComponent } from './components/registrazione.component';
+import { WizardResultComponent } from './components/wizardresult.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { VideoComponent } from './components/video/video.component';
@@ -22,6 +25,13 @@ import { ShowHideComponent } from './components/showhide/showhide.component';
 import { VetrinaHeadComponent } from './components/vetrinahead/vetrinahead.component';
 import { FiltriComponent } from './components/filtri/filtri.component';
 import { VetrinapComponent } from './components/vetrinap/vetrinap.component';
+import { GiftWizardComponent } from './components/giftwizard/giftwizard.component';
+import { WizardResultHeadComponent } from './components/wizardresulthead/wizardresulthead.component';
+import { WizardResultpComponent } from './components/wizardresultp/wizardresultp.component';
+import { WizardResultInterestComponent } from './components/wizardresultinterest/wizardresultinterest.component';
+import { WizardResultHeroComponent } from './components/wizardresulthero/wizardresulthero.component';
+import { RegistrationWizardComponent } from './components/registrationwizard/registrationwizard.component';
+import { ProductInfoComponent } from './components/productinfo/productinfo.component';
 
 @NgModule({
   declarations: [
@@ -38,8 +48,18 @@ import { VetrinapComponent } from './components/vetrinap/vetrinap.component';
     VetrinaComponent,
     ProdottoComponent,
     VetrinaHeadComponent,
+    WizardComponent,
+    RegistrazioneComponent,
+    WizardResultComponent,
     FiltriComponent,
-    VetrinapComponent
+    VetrinapComponent,
+    GiftWizardComponent,
+    WizardResultHeadComponent,
+    WizardResultpComponent,
+    WizardResultInterestComponent,
+    WizardResultHeroComponent,
+    RegistrationWizardComponent,
+    ProductInfoComponent
   ],
   imports: [
     CollapseModule.forRoot(),
@@ -61,6 +81,22 @@ import { VetrinapComponent } from './components/vetrinap/vetrinap.component';
       {
         path: 'vetrina',
         component: VetrinaComponent
+      },
+      {
+        path: 'wizard',
+        component: WizardComponent
+      },
+      {
+        path: 'wizardresult',
+        component: WizardResultComponent
+      },
+      {
+        path: 'registrazione',
+        component: RegistrazioneComponent
+      },
+      {
+        path: 'prodotto/:id',
+        component: ProdottoComponent
       }
     ])
   ],

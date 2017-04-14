@@ -1,17 +1,17 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'prodotto',
+  selector: 'registrazione',
   template: `
     <navbar></navbar>
     
-    
+    <registrationwizard></registrationwizard>
     
     <footer></footer>
   `,
   styleUrls: [
-    './app.component.css'
+    '../app.component.css'
   ]
 })
 
-export class ProdottoComponent {}
+export class RegistrazioneComponent {}

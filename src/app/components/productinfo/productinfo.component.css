@@ -1,0 +1,173 @@
+.productinfo {
+  background-color: #403c4a;
+  padding: 60px 0 90px;
+}
+.prodcarousel {
+  padding-left: 5%;
+}
+.prodcarousel:before {
+  content: " ";
+  position: absolute;
+  top: 50px;
+  left: -6%;
+  background-color: #aa9e1d;
+  height: 100%;
+  width: 60%;
+  margin-left: 50px;
+}
+
+.carousel-inner .item img{
+  width: 100%;
+}
+
+.carousel-control.right {
+  top: inherit;
+  right: -3%;
+  bottom: -17px;
+  background: none;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.carousel-control.left {
+  top: inherit;
+  left: 80%;
+  bottom: -17px;
+  background: none;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.carousel-indicators {
+  bottom: -45px;
+  width: 130px;
+  right: 160px;
+  left: inherit;
+}
+.carousel-indicators .active {
+  background-color: #aa9e1d;
+  margin: 0 5px;
+}
+
+.carousel-indicators li {
+  background-color: white;
+  border: none;
+  margin: 0 5px;
+}
+
+.carousel-control .icon-next, .carousel-control .icon-prev {
+  color: white;
+}
+
+.carousel-control .icon-next:hover, .carousel-control .icon-prev:hover,
+.carousel-control .icon-next:focus, .carousel-control .icon-prev:focus{
+  color: #a39a01;
+  -webkit-transition: all .2s; /* Safari */
+  transition: all .5s;
+}
+
+.carousel-control .icon-next:before {
+  font-family: Flaticon;
+  content: "\F118";
+  font-size: 18px;
+  font-style: normal;
+  margin-left: 20px;
+}
+
+.carousel-control .icon-prev:before {
+  font-family: Flaticon;
+  content: "\F119";
+  font-size: 18px;
+  font-style: normal;
+  margin-left: 20px;
+}
+
+.prodcarousel .share {
+  color: white;
+  position: absolute;
+  bottom: -45px;
+}
+.prodcarousel .share .fa {
+  margin-left: 15px;
+}
+.scheda h3 {
+  margin-bottom: 30px;
+}
+.scheda h3 span {
+  float: right;
+  color: #a39a01;
+}
+.scheda h4 {
+  text-transform: uppercase;
+}
+.scheda, .scheda a {
+  color: white;
+}
+.scheda .filter b {
+  color: #a39a01;
+  margin-left: 5px;
+}
+.scheda .filter span {
+  float: right;
+}
+.scheda .filter {
+  width: 100%;
+  display: block;
+  height: 30px;
+  border-bottom: 1px solid white;
+  margin: 20px 0;
+}
+.scheda .square{
+  width: 15%;
+  margin-left: 5%;
+  height: 20px;
+  display: block;
+  float: right;
+}
+.scheda .square.bianco {
+  background: white;
+}
+.scheda .square.viola {
+  background: #7b5e79;
+}
+.scheda .square.verde {
+  background: #677937;
+}
+.scheda .square.nero {
+  background: #0d0f0c;
+}
+.scheda button {
+  background-color: transparent;
+  border: 2px solid #a39a01;
+  padding: 10px;
+  text-transform: uppercase;
+}
+.scheda button.buy {
+  width: 47%;
+  float: left;
+  background-color: #a39a01;
+}
+.scheda button.gift {
+  width: 47%;
+  float: right;
+}
+.scheda button.wishlist {
+  width: 100%;
+  margin-top: 20px;
+}
+.shop {
+  padding: 40px 0;
+}
+.shop img {
+  width: 100%;
+  margin-top: 25px;
+}
+.shop h3 {
+  text-transform: uppercase;
+}
+.shop h5 {
+  color: #9e7c97;
+  font-size: 1.4em;
+  font-weight: bold;
+  margin-top: 40px;
+}

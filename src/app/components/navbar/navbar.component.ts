@@ -1,4 +1,5 @@
 import { Component, trigger, state, style, animate, transition } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   moduleId: module.id,
@@ -28,7 +29,15 @@ export class NavbarComponent {
 
   public accedi:boolean = false;
 
+  public gruppo:boolean = false;
+
+  public giftTab = 1;
+
   public isCollapsed:boolean = true;
+
+  public navMenuItems = NAVMENUITEMS;
+
+
 
   public collapsed(event:any):void {
     console.log(event);
@@ -40,8 +49,30 @@ export class NavbarComponent {
 
   private logo: string;
 
-  constructor(){
+  constructor(
+    private router: Router,
+    private activatedRoute: ActivatedRoute) {
     this.logo = 'assets/images/logo.png';
+
+    this.navMenuItems.forEach(function(item){
+      if (activatedRoute.snapshot.url[0].path == item.url) {
+        item.active = true;
+      }
+    });
   }
 
 }
+
+export interface NavMenuItem {
+  name: string;
+  url: string;
+  active: boolean;
+}
+
+//Navigation menu array implementing NavMenuItem interface
+var NAVMENUITEMS: NavMenuItem[] = [
+  { "name": "Lookbook", "url": "/lookbook", "active": false},
+  { "name": "Vetrina", "url": "/vetrina", "active": false},
+  { "name": "Negozi", "url": "/negozi", "active": false},
+  { "name": "Guida regali", "url": "/wizard", "active": false}
+];

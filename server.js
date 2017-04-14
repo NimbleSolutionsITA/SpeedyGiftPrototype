@@ -2,7 +2,6 @@ const path = require('path');
 
 const express = require('express');
 const app = express();
-
 // If an incoming request uses
 // a protocol other than HTTPS,
 // redirect that request to the

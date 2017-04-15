@@ -1,0 +1,89 @@
+.cart {
+  box-shadow: inset 0 7px 9px -7px rgba(0,0,0,0.7);
+  padding-bottom: 50px;
+}
+.cart h1 {
+  font-weight: bold;
+  font-size: 2em;
+  color: #403c4a;
+}
+table.product {
+  width: 100%;
+  border: 1px solid lightgray;
+  margin-bottom: 25px;
+}
+
+.thumb {
+  width: 33.3333%;
+}
+.thumb img {
+  width: 100%;
+}
+.detail {
+  width: 66.6666%;
+  padding:10px 20px 5px;
+  border-left: 1px solid lightgray;
+}
+.detail .flaticon-cancel {
+  float: right;
+  color: #403c4a;
+}
+.detail .flaticon-cancel:before {
+  font-size: 14px;
+}
+.detail h5 {
+  color: #bcbcbc;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 0;
+}
+.detail h3 {
+  font-weight: bold;
+  margin: 3px 0 15px;
+  color: #403c4a;
+}
+.detail p {
+  font-weight: bold;
+  color: #403c4a;
+}
+.detail p span {
+  float: right;
+  color: #aa9e1d;
+  font-size: 2em;
+  margin-top: -10px;
+}
+.recap {
+  background-color: #403c4a;
+  color: white;
+  padding: 25px;
+  font-size: 1.2em;
+}
+.recap p {
+  margin-bottom: 20px;
+}
+.recap span {
+  float: right;
+  font-size: 1.4em;
+  margin-top: -7px;
+}
+.recap i {
+  float: right;
+  font-size: .7em;
+  margin-top: -20px;
+}
+.recap button {
+  width: 100%;
+  background-color: #aa9e1d;
+  border: none;
+  text-transform: uppercase;
+  margin-top: 20px;
+  padding: 15px;
+}
+.detail p span.flaticon-christmas {
+  color: #c74a6c;
+}
+.detail p span.flaticon-christmas:before {
+  font-size: 30px;
+  margin-right: 20px;
+}

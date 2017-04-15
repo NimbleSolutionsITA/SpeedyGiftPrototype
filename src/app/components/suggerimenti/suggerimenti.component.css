@@ -1,0 +1,15 @@
+.suggerimenti {
+  background-color: #9e7c97;
+  color: white;
+  margin-top: 80px;
+  padding-bottom: 40px;
+}
+.suggerimenti h2 {
+  text-transform: uppercase;
+  margin: 60px 0;
+  font-weight: bold;
+}
+.suggerimenti img {
+  width: 100%;
+  margin-top: -80px;
+}

@@ -10,10 +10,12 @@ import { RouterModule }   from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home.component';
 import { VetrinaComponent } from './components/vetrina.component';
+import { CartComponent } from './components/cart.component';
 import { ProdottoComponent } from './components/prodotto.component';
 import { WizardComponent } from './components/wizard.component';
 import { RegistrazioneComponent } from './components/registrazione.component';
 import { WizardResultComponent } from './components/wizardresult.component';
+import { ReturningComponent } from './components/returning.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
 import { VideoComponent } from './components/video/video.component';
@@ -32,6 +34,10 @@ import { WizardResultInterestComponent } from './components/wizardresultinterest
 import { WizardResultHeroComponent } from './components/wizardresulthero/wizardresulthero.component';
 import { RegistrationWizardComponent } from './components/registrationwizard/registrationwizard.component';
 import { ProductInfoComponent } from './components/productinfo/productinfo.component';
+import { CarrelloComponent } from './components/carrello/carrello.component';
+import { SuggerimentiComponent } from './components/suggerimenti/suggerimenti.component';
+import { ReturningHeadComponent } from './components/returninghead/returninghead.component';
+import { ReturningUserComponent } from './components/returninguser/returninguser.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +54,9 @@ import { ProductInfoComponent } from './components/productinfo/productinfo.compo
     VetrinaComponent,
     ProdottoComponent,
     VetrinaHeadComponent,
+    ReturningComponent,
+    ReturningHeadComponent,
+    ReturningUserComponent,
     WizardComponent,
     RegistrazioneComponent,
     WizardResultComponent,
@@ -59,7 +68,10 @@ import { ProductInfoComponent } from './components/productinfo/productinfo.compo
     WizardResultInterestComponent,
     WizardResultHeroComponent,
     RegistrationWizardComponent,
-    ProductInfoComponent
+    ProductInfoComponent,
+    CartComponent,
+    CarrelloComponent,
+    SuggerimentiComponent
   ],
   imports: [
     CollapseModule.forRoot(),
@@ -97,6 +109,14 @@ import { ProductInfoComponent } from './components/productinfo/productinfo.compo
       {
         path: 'prodotto/:id',
         component: ProdottoComponent
+      },
+      {
+        path: 'cart',
+        component: CartComponent
+      },
+      {
+        path: 'user/:id',
+        component: ReturningComponent
       }
     ])
   ],

@@ -7,3 +7,60 @@
 a {
   color: #403c4a;
 }
+.button {
+  border-radius: 0;
+  border: none;
+  color: white;
+  background-color: #c74a6c;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 10px 40px;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+}
+
+.button-green {
+  color: white;
+  background-color: #a39a01;
+}
+.button-green-line {
+  color: white;
+  background-color: transparent;
+  border: 2px solid #a39a01;
+}
+
+.button-white {
+  color: #403c4a;
+  background-color: white;
+}
+
+button.button:hover {
+  background-color: white;
+  color: #403c4a;
+  -webkit-transition: all .2s; /* Safari */
+  transition: all .5s;
+}
+
+button.button-white.button:hover {
+  background-color: #403c4a;
+  color: white;
+  -webkit-transition: all .2s; /* Safari */
+  transition: all .5s;
+}
+
+button.button:focus {
+  outline: none;
+}

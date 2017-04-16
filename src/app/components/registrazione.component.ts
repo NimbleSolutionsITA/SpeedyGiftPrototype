@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'registrazione',
@@ -11,7 +11,8 @@ import { Component } from '@angular/core';
   `,
   styleUrls: [
     '../app.component.css'
-  ]
+  ],
+  encapsulation: ViewEncapsulation.None
 })
 
 export class RegistrazioneComponent {}

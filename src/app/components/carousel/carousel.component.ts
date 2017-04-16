@@ -44,6 +44,36 @@ import {Image} from './image.interface';
       transition('start => end', [
         animate(500)
       ])
+    ]),
+
+    trigger('carouselStateM', [
+      state('start', style({
+        left: '0%'
+      })),
+      transition('end => start', [
+        animate(500)
+      ]),
+      transition('mid => start', [
+        animate(500)
+      ]),
+      state('mid', style({
+        left: '-100%'
+      })),
+      transition('start => mid', [
+        animate(500)
+      ]),
+      transition('end => mid', [
+        animate(500)
+      ]),
+      state('end', style({
+        left: '-200%'
+      })),
+      transition('mid => end', [
+        animate(500)
+      ]),
+      transition('start => end', [
+        animate(500)
+      ])
     ])
   ]
 })
@@ -68,7 +98,7 @@ export class CSSCarouselComponent {
         this.isActiveStart= false;
         this.isActiveEnd = true;
         this.images[1].active = false;
-        this.images[2].active = true;
+        this.images[3].active = true;
         break;
       case 'mid':
         this.state = 'start';
@@ -81,7 +111,7 @@ export class CSSCarouselComponent {
         this.state = 'mid';
         this.isActiveEnd= false;
         this.isActiveMid = true;
-        this.images[0].active = false;
+        this.images[3].active = false;
         this.images[2].active = true;
         break;
     }
@@ -108,6 +138,66 @@ export class CSSCarouselComponent {
         this.state = 'start';
         this.isActiveEnd = false;
         this.isActiveStart= true;
+        this.images[3].active = false;
+        this.images[1].active = true;
+        break;
+    }
+  }
+
+  isActiveStartM = true;
+  isActiveMidM = false;
+  isActiveEndM = false;
+
+  stateM = 'start';
+
+  movePanelLeftM() {
+
+    switch(this.stateM) {
+      case 'start':
+        this.stateM = 'end';
+        this.isActiveStartM= false;
+        this.isActiveEndM = true;
+        this.images[1].active = false;
+        this.images[2].active = true;
+        break;
+      case 'mid':
+        this.stateM = 'start';
+        this.isActiveMidM= false;
+        this.isActiveStartM = true;
+        this.images[2].active = false;
+        this.images[1].active = true;
+        break;
+      case 'end':
+        this.stateM = 'mid';
+        this.isActiveEndM= false;
+        this.isActiveMidM = true;
+        this.images[0].active = false;
+        this.images[2].active = true;
+        break;
+    }
+  }
+
+  movePanelRightM() {
+
+    switch(this.stateM) {
+      case 'start':
+        this.stateM = 'mid';
+        this.isActiveStartM= false;
+        this.isActiveMidM = true;
+        this.images[1].active = false;
+        this.images[2].active = true;
+        break;
+      case 'mid':
+        this.stateM = 'end';
+        this.isActiveMidM= false;
+        this.isActiveEndM = true;
+        this.images[2].active = false;
+        this.images[3].active = true;
+        break;
+      case 'end':
+        this.stateM = 'start';
+        this.isActiveEndM = false;
+        this.isActiveStartM= true;
         this.images[3].active = false;
         this.images[1].active = true;
         break;

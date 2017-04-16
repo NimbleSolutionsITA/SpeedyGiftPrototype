@@ -4,7 +4,7 @@
     Lorem ipsum dolor sit amet, consectetur adipiscing
     elit,sed do eiusmod tempor incididunt ut l.
   </p>
-  <div class="row">
+  <div class="row desktop">
     <div class="col-sm-12 wrap">
       <button (click)="movePanelLeft()" class="left"><i class="flaticon-arrows"> </i></button>
 
@@ -29,6 +29,36 @@
         <li [class.active]="isActiveStart"></li>
         <li [class.active]="isActiveMid"></li>
         <li [class.active]="isActiveEnd"></li>
+      </ol>
+
+    </div>
+  </div>
+
+  <div class="row mobile">
+    <div class="col-sm-12 wrap">
+      <button (click)="movePanelLeftM()" class="left"><i class="flaticon-arrows"> </i></button>
+
+      <div class="carousel">
+        <ul [@carouselStateM]="stateM" class="slides">
+          <li *ngFor="let image of images; let iM = index" [class.active]="image.active">
+            <a routerLink="/prodotto/1">
+              <div class="slide">
+                <img src="{{image.url}}" alt="">
+                <span class="brand"><p>{{image.brand}}</p></span>
+                <span class="name"><p>{{image.name}}</p></span>
+                <span class="price"><p>{{image.price}}</p></span>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <button (click)="movePanelRightM()" class="right"><i class="flaticon-arrows-1"> </i></button>
+
+      <ol class="carousel-indicators">
+        <li [class.active]="isActiveStartM"></li>
+        <li [class.active]="isActiveMidM"></li>
+        <li [class.active]="isActiveEndM"></li>
       </ol>
 
     </div>

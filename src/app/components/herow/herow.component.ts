@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
         <h1 class="subtitle">Rispondi alla nostre semplici domande e noi ti suggeriremo il regalo perfetto per te!</h1>
         <br>
         <br>
-        <a routerLink="/wizard"><button class="btn btn-default">Inizia il nostro Quiz</button></a>
+        <a routerLink="/wizard"><button class="button button-white">Inizia il nostro Quiz</button></a>
       </div>
     </div>
     `

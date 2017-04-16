@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'vetrina',
@@ -15,7 +15,8 @@ import { Component } from '@angular/core';
   `,
   styleUrls: [
     '../app.component.css'
-  ]
+  ],
+  encapsulation: ViewEncapsulation.None
 })
 
 export class VetrinaComponent {}

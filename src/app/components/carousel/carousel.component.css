@@ -24,6 +24,9 @@
   -webkit-animation: carousel 30s infinite;
   animation: carousel 30s infinite;
 }
+.mobile .slides {
+  width: 600%; /* Number of panes * 100% */
+}
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
   color: #c74a6c;
   background-color: transparent;
@@ -158,4 +161,15 @@ button:hover {
 }
 .container span.price p{
   color: #ab9f1d;
+}
+.mobile {
+  display: none;
+}
+@media (max-width: 991px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
 }

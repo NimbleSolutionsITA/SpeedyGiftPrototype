@@ -42,6 +42,7 @@
 .vetrinap .product {
   font-weight: bold;
   margin-bottom: 40px;
+  cursor: pointer;
 }
 .vetrinap .product p {
   margin-left: 20px;

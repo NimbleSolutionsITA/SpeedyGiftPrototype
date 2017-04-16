@@ -1,7 +1,7 @@
 <div class=wizardgift>
   <div class="container">
     <div class="row">
-      <div class="col-sm-3">
+      <div class="col-xs-3">
         <div class="line">
           <div [class.active]="step==1" [class.done]="step>1" class="circle"><span></span></div>
           <div [class.active]="step==2" [class.done]="step>2" class="circle"><span></span></div>
@@ -43,10 +43,10 @@
           <p>Scegli una risposta</p>
         </div>
       </div>
-      <div class="col-sm-9">
+      <div class="col-xs-9">
 
         <div [class.active]="step==1" class="row box">
-          <div class="col-sm-4">
+          <div class="col-xs-4">
             <div (click)="step=step+1" class="answer">
               <span class="flaticon-marriage-rings-couple-with-a-heart"></span>
               <h4>Matrimonio</h4>
@@ -64,7 +64,7 @@
               <h4>Battesimo</h4>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-xs-4">
             <div (click)="step=step+1" class="answer">
               <span class="flaticon-school"></span>
               <h4>Laurea</h4>
@@ -82,7 +82,7 @@
               <h4>Neonato</h4>
             </div>
           </div>
-          <div class="col-sm-4">
+          <div class="col-xs-4">
             <div (click)="step=step+1" class="answer">
               <span class="flaticon-handshake"></span>
               <h4>Ringraziamento</h4>
